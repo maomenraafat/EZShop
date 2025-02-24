@@ -18,7 +18,7 @@ import { NgxSpinnerComponent } from 'ngx-spinner';
 })
 export class AppComponent implements OnInit {
   title = 'EZShop';
-  _flowbiteService = inject(FlowbiteService);
+  _flowbiteService: FlowbiteService = inject(FlowbiteService);
 
   ngOnInit(): void {
     this._flowbiteService.loadFlowbite((flowbite) => {

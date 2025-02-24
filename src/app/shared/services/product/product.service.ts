@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class ProductService {
-  private readonly _httpClient = inject(HttpClient);
+  private readonly _httpClient: HttpClient = inject(HttpClient);
   constructor() {}
 
   getProducts(): Observable<any> {

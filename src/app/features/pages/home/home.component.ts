@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit {
   searchValue!: string;
   products!: Product[];
   filteredProducts: Product[] = [];
-  _productService = inject(ProductService);
+  _productService: ProductService = inject(ProductService);
 
   ngOnInit(): void {
     this.getProducts();

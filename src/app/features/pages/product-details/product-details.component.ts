@@ -12,8 +12,8 @@ import { Product } from '../../../shared/interfaces/product';
 export class ProductDetailsComponent implements OnInit {
   product!: Product;
   apiError!: boolean;
-  private readonly _productService = inject(ProductService);
-  private readonly _activatedRoute = inject(ActivatedRoute);
+  private readonly _productService: ProductService = inject(ProductService);
+  private readonly _activatedRoute: ActivatedRoute = inject(ActivatedRoute);
 
   ngOnInit(): void {
     this.getId();

@@ -108,21 +108,21 @@ products-gallery/
 
 ---
 
-## ❗ Error Handling & Interceptors
+## Error Handling & Interceptors
 
 This project uses **HTTP Interceptors** to handle:
 
-- ⏳ **Loading State**: `loading.interceptor.ts` displays a spinner when making API calls.
-- ❌ **Error Handling**: `error.interceptor.ts` captures and displays user-friendly error messages.
+- **Loading State**: `loading.interceptor.ts` displays a spinner when making API calls.
+- **Error Handling**: `error.interceptor.ts` captures and displays user-friendly error messages.
 
 ---
 
-## 🚀 Future Enhancements
+## Future Enhancements
 
-- 🛒 **Shopping Cart Feature** - Allow users to add products to a cart.
-- ⭐ **Product Ratings & Reviews** - Display customer ratings and allow users to review products.
-- 🎯 **Filter Products by Category** - Enable category-based filtering.
-- 📱 **Improved Mobile UX Design** - Optimize UI/UX for better mobile responsiveness.
+- **Shopping Cart Feature** - Allow users to add products to a cart.
+- **Product Ratings & Reviews** - Display customer ratings and allow users to review products.
+- **Filter Products by Category** - Enable category-based filtering.
+- **Improved Mobile UX Design** - Optimize UI/UX for better mobile responsiveness.
 
 ## Contributing
 

@@ -8,9 +8,8 @@ import { RouterLink } from '@angular/router';
   styleUrl: './navbar.component.css',
 })
 export class NavbarComponent {
-  isMenuOpen = false; // Add this property to manage the mobile menu state
+  isMenuOpen = false;
 
-  // Method to toggle the mobile menu
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;
   }
