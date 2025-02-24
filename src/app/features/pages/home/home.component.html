@@ -1,0 +1,27 @@
+<div class="container mx-auto my-7">
+  <div class="text-center">
+    <input
+      [(ngModel)]="searchValue"
+      (input)="search()"
+      type="text"
+      placeholder="Search ................"
+      class="w-[80%] rounded-md border-purple-500 focus:border-purple-500 focus:shadow-purple-500 focus:ring-purple-500 placeholder:text-purple-400"
+    />
+  </div>
+</div>
+@if (filteredProducts.length > 0) {
+
+<div
+  class="container mx-auto grid sm:grid-cols-2 md:grid-cols-4 xl:grid-cols-5 gap-5 my-8"
+>
+  @for (product of filteredProducts; track $index) {
+  <app-product-item [product]="product"></app-product-item>
+
+  }
+</div>
+} @else {
+<div class="h-full my-7">
+  <p class="text-center text-purple-500 text-3xl">No products found.</p>
+</div>
+
+}

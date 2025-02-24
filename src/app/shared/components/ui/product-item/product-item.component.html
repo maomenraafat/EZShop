@@ -1,0 +1,64 @@
+<!-- <div
+  class="product flex flex-col justify-between h-[450px] border border-gray hover:border-purple-700 p-4 rounded-xl hover:shadow-xl transition-all mb-4 group hover:translate-y-[-1rem]"
+>
+  <a [routerLink]="['/productDetails', product.id]">
+    <img [src]="product.image" class="w-full h-[250px] object-contain" alt="" />
+
+    <h2 class="my-4 text-purple-700">
+      {{ product.title.split(" ").splice(0, 2).join(" ") }}
+    </h2>
+
+    <div class="flex justify-between mb-3">
+      <p>{{ product.price }} $</p>
+      <p><i class="fa fa-star text-[#ffc908]"></i> {{ product.rating.rate }}</p>
+    </div>
+  </a>
+
+  <p class="">
+    {{ product.description.split(" ").splice(0, 10).join(" ") }}
+  </p>
+
+
+</div> -->
+
+<div
+  class="product flex flex-col justify-between h-[450px] sm:h-[400px] border border-gray-200 hover:border-purple-700 p-4 rounded-xl hover:shadow-xl transition-all duration-300 mb-4 group hover:-translate-y-2"
+>
+  <a [routerLink]="['/productDetails', product.id]" class="block h-full">
+    <!-- Product Image -->
+    <div class="w-full h-[200px] sm:h-[180px] flex items-center justify-center">
+      <img
+        [src]="product.image"
+        class="w-full h-full object-contain"
+        alt="{{ product.title }}"
+      />
+    </div>
+
+    <!-- Product Title -->
+    <h2 class="my-4 text-lg font-semibold text-purple-700 truncate">
+      {{ product.title.split(" ").splice(0, 2).join(" ") }}
+    </h2>
+
+    <!-- Price and Rating -->
+    <div class="flex justify-between items-center mb-3">
+      <p class="text-xl font-bold text-gray-900">${{ product.price }}</p>
+      <p class="text-lg text-gray-700">
+        <i class="fa fa-star text-[#ffc908]"></i>
+        {{ product.rating.rate }}
+      </p>
+    </div>
+
+    <!-- Product Description -->
+    <p class="text-gray-600 text-sm line-clamp-3">
+      {{ product.description.split(" ").splice(0, 10).join(" ") }}
+    </p>
+  </a>
+
+  <!-- Add to Cart Button -->
+  <!-- <button
+    (click)="handleAddToCart(product.id)"
+    class="text-white p-3 rounded-md w-full mt-4 bg-purple-700 opacity-0 transition-all duration-500 group-hover:opacity-100 translate-y-[100%] group-hover:translate-y-0 overflow-hidden hover:bg-purple-800 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2"
+  >
+    Add to Cart
+  </button> -->
+</div>
